@@ -7,5 +7,5 @@ def get_token():
         "password" : "password123"
     }
     create_user = requests.post(url, json=data)
-    print(create_user.status_code)
-    print(create_user.json())
+    token = create_user.json()["token"]
+    return create_user.status_code, create_user.json(), token
