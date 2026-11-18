@@ -9,4 +9,3 @@ def get_token():
     create_user = requests.post(url, json=data)
     print(create_user.status_code)
     print(create_user.json())
-get_token()
