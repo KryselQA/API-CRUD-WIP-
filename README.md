@@ -9,7 +9,7 @@
 | Requests | API testing |
 | GitHub | Version Control |
 
-### Проект состоит из 5 тестов:
+## Проект состоит из 5 тестов:
 <details><summary>Авторизация</summary>
 
    1. Задаём переменную с url с auth в пути
