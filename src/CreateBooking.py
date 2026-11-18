@@ -1,7 +1,7 @@
 import requests
-import pprint
-def createBooking():
+def create_booking():
     url = "https://restful-booker.herokuapp.com/booking"
+
 
     person = {
         "firstname" : "Denis",
@@ -10,12 +10,16 @@ def createBooking():
         "depositpaid" : True,
         "bookingdates" : {
             "checkin" : "2026-11-12",
-            "checkout" : "2019-11-18"
+            "checkout" : "2026-11-18"
         },
         "additionalneeds" : "Breakfast"
     }
 
     response = requests.post(url, json=person)
+    booking_id = (response.json())["bookingid"]
 
-    print(response.json())
-    print(response.status_code)
+    # Я не придумал как искать по полученному id в отдельной функции пока, поэтому оставил в одной
+    url_for_find_book = f"https://restful-booker.herokuapp.com/booking/{booking_id}"
+    response_by_id = requests.get(url_for_find_book)
+
+    return booking_id, response.status_code, response_by_id
