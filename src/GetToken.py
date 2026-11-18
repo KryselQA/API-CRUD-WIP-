@@ -6,6 +6,7 @@ def get_token():
         "username" : "admin",
         "password" : "password123"
     }
-    CreateUser = requests.post(url, json=data)
-    print(CreateUser.status_code)
-    print(CreateUser.json())
+    create_user = requests.post(url, json=data)
+    print(create_user.status_code)
+    print(create_user.json())
+get_token()
