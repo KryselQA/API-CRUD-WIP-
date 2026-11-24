@@ -1,13 +1,20 @@
-# Тесты создания бронирований-
+# Тесты бронирования на примере Restful Booker
 ## Стек:
 
-> Здесь будет табличка с тем, что было использовано и за что оно отвечает.
+| Name  | Role   |
+| :----- | ------ |
+| Python 3.14   | Programming language |
+| Pytest | Test runner |
+| Pycharm 2025 Community Edition | IDE |
+| Requests | API testing |
+| GitHub | Version Control |
 
-### Проект состоит из 5 тестов:
+## Проект состоит из 5 тестов:
 <details><summary>Авторизация</summary>
 
-   1. 1
-   2. 1
+   1. Задаём переменную с url с auth в пути
+   2. В словаре передаём логин и пароль
+   3. Указываем словарь как json в параметрах post запроса
 
 </details>
 <details><summary>Создание бронирований</summary>
@@ -35,4 +42,9 @@
 
 </details>
 
-
+## Автор:
+>**Ерофеев Денис**
+>
+>QA Engineer
+>
+>2026
