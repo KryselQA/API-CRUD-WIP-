@@ -5,6 +5,7 @@
 | :----- | ------ |
 | Python 3.14   | Programming language |
 | Pytest | Test runner |
+|Faker| library for fake data|
 | Pycharm 2025 Community Edition | IDE |
 | Requests | API testing |
 | GitHub | Version Control |
